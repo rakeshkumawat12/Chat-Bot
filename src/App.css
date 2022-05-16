@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+.App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 30px;
+    background: #fdfdfe;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper .content .header{
+    display: flex;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.right{
+    margin-left: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper .content .header .img img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper .content .header .right{
+    margin-right: 10px;
 }
+
+.wrapper .content .header .right .name{
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.wrapper .content .header .right .status{
+    font-size: 0.9em;
+    color: #363062;
+    font-weight: 600;
+}
+
+.wrapper .content .main{
+    margin: 30px 0 0;
+}
+
+.wrapper .content .main .mainContent .messages{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper .content .main .mainContent .messages .botMessage{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background: #EDECED;
+    font-style: 1.1em;
+    border-radius: 10px;
+    margin: 0 10px 0;
+}
+
+.wrapper .content .main .mainContent .messages .humanMessage{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background: #363062;
+    color: #EDECED;
+    font-style: 1.1em;
+    border-radius: 10px;
+    position: relative;
+    top: 120px;
+    margin-bottom: 20px;
+}
+
+.wrapper .content .bottom{
+    margin: 120px 0 0;
+}
+
+.wrapper .content .bottom .btm{
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .content .bottom .btm .input input{
+    width: 400px;
+    height: 58px;
+    padding-left: 36px;
+    outline: none;
+    border: none;
+    background: #EDECED;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.wrapper .content .bottom .btm .btn{
+    margin-left: 10px;
+}
+
+.wrapper .content .bottom .btm .btn button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #363062;
+    color: #FFF;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.wrapper .content .bottom .btm .btn button i{
+    margin-left: 5px;
+}
+
